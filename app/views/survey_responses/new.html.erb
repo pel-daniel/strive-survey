@@ -5,7 +5,7 @@
 </p>
 
 <%= form_for [@survey, @survey_response] do |f| %>
-  <%= f.text_field :email, placeholder: 'Email' %>
+  <%= f.text_field :email, placeholder: 'Email', autofocus: true %>
 
   <%= f.submit 'Start' %>
 <% end %>
