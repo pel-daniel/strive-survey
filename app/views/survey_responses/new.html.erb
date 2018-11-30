@@ -4,7 +4,7 @@
   Welcome to the Strive Talent assessment. Enter your email to start the survey.
 </p>
 
-<%= form_for @survey_response do |f| %>
+<%= form_for [@survey, @survey_response] do |f| %>
   <%= f.text_field :email, placeholder: 'Email' %>
 
   <%= f.submit 'Start' %>
