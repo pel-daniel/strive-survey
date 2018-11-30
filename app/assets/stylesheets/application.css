@@ -46,9 +46,17 @@ input[type="submit"] {
   padding: 0.3em 0.5em;
 }
 
-input:focus {
+input:focus, textarea:focus {
   border: 1px solid var(--primary-color);
   outline: none;
+}
+
+textarea {
+  border: 1px solid var(--gray-color);
+  font-size: 1.2em;
+  height: 7em;
+  padding: 0.3em 0.2em;
+  width: 25em;
 }
 
 .navbar {

@@ -1,2 +1,11 @@
-<h1>Questions#show</h1>
-<p>Find me in app/views/questions/show.html.erb</p>
+<h2><%= @question.text %></h2>
+
+<%= form_for [@survey_response, @question, @answer] do |f| %>
+  <div>
+    <%= f.text_area :text %>
+  </div>
+
+  <div>
+    <%= f.submit 'Next' %>
+  </div>
+<% end %>

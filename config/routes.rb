@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   end
 
   resources :survey_responses, only: [] do
-    resources :questions, only: [:show, :create]
+    resources :questions, only: :show do
+      post 'answers'
+    end
   end
 end
