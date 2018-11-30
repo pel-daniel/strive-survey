@@ -3,7 +3,7 @@ puts 'Deleting existing surveys'
 Survey.destroy_all
 
 puts 'Creating test survey'
-survey = Survey.create!(name: 'Test Strive Survey')
+survey = Survey.create!(name: 'Personal Preferences Survey')
 
 puts 'Creating 5 questions'
 
