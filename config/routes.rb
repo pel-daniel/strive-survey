@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'survey_responses#new'
+  get 'survey/:survey_id', to: 'survey_responses#new'
+
+  resources :survey_responses, only: :create
 end
