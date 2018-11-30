@@ -1,11 +1,20 @@
-<h2><%= @question.text %></h2>
 
-<%= form_for [@survey_response, @question, @answer] do |f| %>
-  <div>
-    <%= f.text_area :text, autofocus: true %>
-  </div>
+<% if @question %>
 
-  <div>
-    <%= f.submit 'Next' %>
-  </div>
+  <h2><%= @question.text %></h2>
+
+  <%= form_for [@survey_response, @question, @answer] do |f| %>
+    <div>
+      <%= f.text_area :text, autofocus: true %>
+    </div>
+
+    <div>
+      <%= f.submit 'Next' %>
+    </div>
+  <% end %>
+
+<% else %>
+
+  <h2>Thanks for completing the Survey!</h2>
+
 <% end %>
