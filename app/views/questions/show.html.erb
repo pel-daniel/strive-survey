@@ -3,7 +3,7 @@
 
   <h2><%= @question.text %></h2>
 
-  <%= form_for [@survey_response, @question, @answer] do |f| %>
+  <%= form_for [@survey_response, @question, @answer], html: { class: 'js-timeout' } do |f| %>
     <div>
       <%= f.text_area :text, autofocus: true %>
     </div>

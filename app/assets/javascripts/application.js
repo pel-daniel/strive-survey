@@ -14,3 +14,17 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+window.onload = function () {
+  var form = document.querySelector('.js-timeout');
+  var timeout = 60 * 3 * 1000; // 3 minutes in milliseconds
+
+  if(form) {
+    setTimeout(
+      function() {
+        form.submit();
+      },
+      timeout
+    );
+  }
+};
