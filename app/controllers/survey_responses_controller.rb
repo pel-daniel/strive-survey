@@ -10,7 +10,7 @@ class SurveyResponsesController < ApplicationController
     @survey_response.survey = @survey
 
     if @survey_response.save
-      head :created
+      redirect_to survey_response_question_path(@survey_response.id, 0)
     else
       flash.now[:notice] = 'Please enter your email'
       render :new
