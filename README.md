@@ -7,4 +7,4 @@ Development:
 - bundle
 - rails db:create
 - rails db:seed
-- Navigate to [localhost:3000/survey/1](localhost:3000/survey/1)
+- Navigate to http://localhost:3000/survey/1
