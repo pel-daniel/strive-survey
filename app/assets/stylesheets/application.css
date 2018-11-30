@@ -44,6 +44,7 @@ input[type="submit"] {
   color: white;
   cursor: pointer;
   padding: 0.3em 0.5em;
+  transition: border 300ms;
 }
 
 input:focus, textarea:focus {
@@ -56,6 +57,7 @@ textarea {
   font-size: 1.2em;
   height: 7em;
   padding: 0.3em 0.2em;
+  transition: border 300ms;
   width: 25em;
 }
 
